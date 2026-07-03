@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payooo Mobile Bank</title>
+
+    <!-- tailwindcss and daisyUI cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css-links -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+
+    <style>
+      .outfit {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+      }
+    </style>
+  </head>
+  <body
+    class="outfit flex justify-center items-center h-screen flex-col gap-8 bg-[#F4F5F7]"
+  >
+    <div>
+      <img src="assets/Logo-full.png" alt="logo" class="w-[263px] h-[84px]" />
+    </div>
+    <div
+      class="w-[402px] h-[317px] rounded-3xl bg-white shadow-lg flex flex-col justify-center items-center"
+    >
+      <fieldset class="fieldset p-4">
+        <label class="label font-medium text-[#080808] text-[16px]"
+          >Mobile Number</label
+        >
+        <input id="mobileNumber"
+          maxlength="11"
+          minlength="11"
+          type="tel"
+          class="input rounded-4xl bg-[#F4F5F7] font-light text-[16px] w-[338px] h-[52px] mb-4"
+          placeholder="Enter your number"
+        />
+
+        <label class="label font-medium text-[#080808] text-[16px]"
+          >4 Digit Pin</label
+        >
+        <input id="pin"
+          maxlength="4"
+          minlength="4"
+          type="password"
+          class="input rounded-4xl bg-[#F4F5F7] font-light text-[16px] w-[338px] h-[52px]"
+          placeholder="Enter 4 Digit Pin"
+        />
+
+        <button id="loginBtn"
+          class="btn btn-neutral mt-4 w-[338px] h-[53px] bg-[#3B25C1] rounded-4xl border-none"
+        >
+          Login
+        </button>
+      </fieldset>
+    </div>
+
+
+    <script src="Script/login.js"></script>
+  </body>
+</html>
