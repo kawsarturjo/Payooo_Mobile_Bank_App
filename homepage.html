@@ -1,13 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payooo Mobile Bank</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payooo | Home</title>
 
-    <h1>Payooo Mobile Bank</h1>
-    
-</body>
+    <!-- tailwindcss and daisyUI cdn link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css-links -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+
+    <style>
+      .outfit {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+      }
+    </style>
+  </head>
+  <body class="outfit bg-[#F4F5F7] w-[450px] mx-auto">
+
+    <header class="pt-11 pb-8 pl-6 pr-6 flex justify-between items-center border-b border-[#08080850]">
+
+        <!-- left part -->
+        <div class="flex gap-2">
+            <img class="w-[60px] h-12" src="assets/logo.png" alt="logo">
+            <div>
+                <h1 class="font-extrabold text-[18px] text-[#080808]">$45000</h1>
+                <p class="text-[14px] text-[#08080850]">Available Balance</p>
+            </div>
+        </div>
+
+        <!-- right part -->
+        <button class="btn text-[14px] text-[#08080850] w-[102px] h-[38px] rounded-lg">Log Out</button>
+    </header>
+
+    <section class="pl-6 pr-6 mt-8 mb-6">
+        <h1 class="text-2xl font-bold leading-[30px] text-[#080808] mb-3.5">Welcome to Pay<span class="text-[#7460FF]">oo</span></h1>
+        <p class="text-[16px] text-[#08080850] leading-[26px]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+    </section>
+
+
+    <script src="Script/login.js"></script>
+  </body>
 </html>
