@@ -52,7 +52,7 @@
         <div class="flex gap-2">
           <img class="w-15 h-12" src="assets/logo.png" alt="logo" />
           <div>
-            <h1 class="font-extrabold text-[18px] text-[#080808]">$<span>45000</span></h1>
+            <h1 class="font-extrabold text-[18px] text-[#080808]">$<span id="balance">45000</span></h1>
             <p class="text-[14px] text-[#08080850]">Available Balance</p>
           </div>
         </div>
@@ -127,7 +127,7 @@
               >Select A Bank</label
             >
             <select id="bank_select" class="select rounded-4xl bg-[#F4F5F7] font-light text-[16px] text-[#080808] w-84.5 h-13 mb-4">
-              <option disabled selected>Select back</option>
+              <option disabled selected>Select bank</option>
               <option>Islamic Bank plc</option>
               <option>Midland Bank ltd</option>
               <option>Brac Bank</option>
@@ -169,7 +169,7 @@
             />
 
             <button
-              id="Add Money"
+              id="Add_Money"
               class="btn btn-neutral mt-4 w-84.5 h-13.25 bg-[#3B25C1] rounded-4xl border-none"
             >
               Add Money
@@ -178,32 +178,6 @@
         </div>
       </section>
     </section>
-
-    <script>
-
-        document.getElementById('Add Money').addEventListener('click', function(){
-
-            const updateBalance = document.getElementById('update_balance');
-
-
-            const bankSelect = document.getElementById('bank_select').value;
-            const bankAcNumber = document.getElementById('bank_Ac_Number').value;
-            const addAmount = document.getElementById('add_Amount').value;
-            updateBalance.innerText = addAmount;
-            const pinNumber = document.getElementById('pin_Number').value;
-
-            if(bankSelect  && bankAcNumber === '01612622969' && pinNumber === '8877'){
-
-                alert("Add Money Successfull!!")
-
-            } else{
-
-                alert("wrong Account Number!")
-            }
-
-        });
-
-    </script>
 
     <script src="Script/add_money.js"></script>
   </body>
