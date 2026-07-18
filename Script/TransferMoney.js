@@ -19,7 +19,7 @@ document.getElementById('transfer_money_btn').addEventListener('click', function
 
         const pinNumber = document.getElementById('pin_Number').value;
           if(pinNumber === "1234"){
-            alert("Add Money Successful!");
+            alert("Transfer Money Successful!");
             Balance.innerText = tranferBalance;
           } else{
             alert('Invalid Pin Number');

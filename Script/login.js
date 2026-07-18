@@ -13,7 +13,7 @@
 
           // Redirect to dashboard.html
           alert("Login Successful!!")
-          window.location.assign("/homepage.html")
+          window.location.assign("../html_Files/homepage.html")
         } else {
 
           // Show an alert for invalid credentials
