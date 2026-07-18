@@ -12,7 +12,7 @@ document.getElementById('transfer_money_btn').addEventListener('click', function
         const newBalance = Balance.innerText;
 
         const tranferBalance = Number(newBalance) - Number(transferAmount);
-        if(tranferBalance < 0 && transferAmount == 0){
+        if(tranferBalance < 0){
           alert('Invalid Amount!')
           return;
         }
