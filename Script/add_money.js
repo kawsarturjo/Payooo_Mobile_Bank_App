@@ -19,7 +19,7 @@
 
           const addedNewBalance = Number(newBalance) + Number(addAmount);
           if(addAmount == 0){
-            alert("0 ammount not allowed!")
+            alert("0 Amount not allowed!")
             return;
           }
           

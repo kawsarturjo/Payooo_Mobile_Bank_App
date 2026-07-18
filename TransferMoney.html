@@ -1,4 +1,4 @@
-<!doctype html>
+    <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -114,7 +114,7 @@
     <section class="bg-[#F4F5F7]">
       <section class="pl-6 pr-6 pt-[29.5px] pb-13.25">
         <div class="flex justify-between mb-4">
-          <h2 class="text-[18px] text-[#08080890] font-semibold">Cash Out</h2>
+          <h2 class="text-[18px] text-[#08080890] font-semibold">Transfer Money</h2>
         </div>
 
         <!-- form -->
@@ -124,10 +124,10 @@
           <fieldset class="fieldset p-4">
 
             <label class="label font-medium text-[#08080870] text-[16px]"
-              >Agent Number</label
+              >User Account Number</label
             >
             <input
-              id="cash_out_agent_num"
+              id="transfer_money_num"
               maxlength="11"
               minlength="11"
               type="text"
@@ -139,7 +139,7 @@
               >Amount</label
             >
             <input
-              id="cash_out_amount"
+              id="transfer_amount"
               min="0.00" step="0.01"
               type="number"
               class="input rounded-4xl bg-[#F4F5F7] text-[#080808] font-light text-[16px] w-84.5 h-13 mb-4"
@@ -150,7 +150,7 @@
               >Pin Number</label
             >
             <input
-              id="cash_out_pin"
+              id="pin_Number"
               maxlength="4"
               minlength="4"
               type="password"
@@ -159,17 +159,17 @@
             />
 
             <button
-              id="cash_out_btn"
+              id="transfer_money_btn"
               class="btn btn-neutral mt-4 w-84.5 h-13.25 bg-[#3B25C1] rounded-4xl border-none"
             >   
-              Withdraw Money
+              Send Now
             </button>
           </fieldset>
         </div>
       </section>
     </section>
 
-
-    <script src="Script/cash_out.js"></script>
+  
+    <script src="Script/TransferMoney.js"></script>
   </body>
 </html>
