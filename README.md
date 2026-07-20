@@ -53,4 +53,4 @@ PAYOO is a smart Mobile Financial Services (MFS) interface that provides a seaml
     
 </table>
 
-live link: https://kawsarturjo.github.io/Payooo_Mobile_Bank_App/
+Live link: https://kawsarturjo.github.io/Payooo_Mobile_Bank_App/
