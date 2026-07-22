@@ -17,7 +17,7 @@ document.getElementById('transfer_money_btn').addEventListener('click', function
           return;
         }
 
-        const pinNumber = document.getElementById('pin_Number').value;
+        const pinNumber = document.getElementById('transfer_pin_Number').value;
           if(pinNumber === "1234"){
             alert("Transfer Money Successful!");
             Balance.innerText = tranferBalance;
