@@ -38,7 +38,7 @@
             <img src="../assets/opt-1.png" alt="logo">
           </div>
           <div>
-              <h2 class="text-[16px] text-[#08080870] font-semibold">Add Money | ${bankSelect} | ${addAmount} Bdt</h2>
+              <h2 class="text-[16px] text-[#08080870] font-semibold">Add Money | ${bankSelect} | ${addAmount} BDT</h2>
               <p class="text-[12px] text-[#08080870]">${new Date()}</p>
           </div>
           </div>
